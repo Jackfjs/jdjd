@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+     <title>СтройГрупп</title>
+<!-- 
+
+Eatery Cafe Template 
+
+http://www.templatemo.com/tm-515-eatery
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+     <link rel="stylesheet" href="style.css">
+     
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">СтройГрупп</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="index.html#menu" class="smoothScroll">Главная</a></li>
+                         <li><a href="uslug2.html" class="smoothScroll">Щебень</a></li>
+                         <li><a href="uslug3.html" class="smoothScroll">Грунт</a></li>
+                         <li><a href="index.html#team" class="smoothScroll">Каталог продукции</a></li>
+                         <li><a href="#contact" class="smoothScroll">Контакты</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         
+                         <a href="#footer" class="section-btn">Свяжитесь с нами</a>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Индикаторы слайдов -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Слайды -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/slider-image1.jpg.jpg" alt="First slide">
+              <div class="carousel-caption">
+                
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/slider-image2.jpg.jpg" alt="Second slide">
+              <div class="carousel-caption">
+                
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/slider-image3.jpg.jpeg" alt="Third slide">
+              <div class="carousel-caption">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <style>
+.service-card {
+    width: 23%; /* Adjust width to fit 4 items in a row */
+    margin: 0 1% 30px; /* Add horizontal margin */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 500px; /* Fixed height for consistency */
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.service-card h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+.service-card p {
+    flex-grow: 1;
+    margin: 10px 2px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevents text from spilling out */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits the text to three lines */
+    -webkit-box-orient: vertical;
+    height: 75px; /* Fixed height to keep the layout uniform */
+}
+
+.price-info {
+    text-align: center; /* Center the price information */
+    margin: 10px 0; /* Space above and below the price */
+}
+
+.service-card a {
+    width: 80%; /* Set button width */
+    align-self: center; /* Center button horizontally */
+    margin-top: auto; /* Auto top margin to push the button to the bottom */
+    margin-bottom: 10px; /* Bottom margin */
+    background-color: #ce3232;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust spacing around items */
+}
+
+.services-title {
+    text-align: center; /* Выравнивание заголовка по центру */
+    font-size: 29px; /* Размер шрифта заголовка */
+    color: #333; /* Цвет текста заголовка */
+    margin-bottom: 10px; /* Отступ снизу для создания пространства между заголовком и карточками */
+    font-family: Arial, sans-serif; /* Шрифт заголовка */
+    margin-top: 10px;
+}
+
+/* текст */
+
+.intro-text h2, .intro-text h3 {
+    text-align: center; /* Центрирование заголовков */
+}
+
+.intro-text p, .intro-text ul {
+    text-align: justify; /* Выравнивание текста по ширине */
+    margin-bottom: 10px; /* Отступ снизу для параграфов и списков */
+    font-size: 20px;
+}
+
+.intro-text ul {
+    list-style-type: disc; /* Тип маркера для списка */
+    padding-left: 20px; /* Отступ слева для списка */
+}
+
+      </style>
+
+
+
+<section class="services ">
+    <h2 class="services-title">Купить песок</h2>
+    <div class="container ">
+        
+        <!-- Карточки услуг -->
+        
+        <div class="service-card ">
+            <img src="images/pes1.jpg" alt="">
+            <h3>Карьерный песок</h3>
+            <p>Содержит в себе камни и глинистые включения, остатки растений, пылевидные частицы. В неочищенном виде подходит для засыпки траншей и котлованов, укладки подушки под фундамент или дорожное полотно.</p>
+            <div class="price-info"><strong>От: 750 руб. </strong></div>
+            <a href="#contact">Заказать</a>
+        </div>
+        <div class="service-card ">
+            <img src="images/pes2.jpg" alt="">
+            <h3 class="h3-card">Речной песок</h3>
+            <p>Универсальный вид песка, подходящий для строительных работ. Добывается со дна рек намывом, поэтому свободен от пылевидных частиц и почти полностью лишен посторонних включений.</p>
+            <div class="price-info"><strong>От: 1300 руб.</strong></div>
+            <a href="#contact">Заказать</a>
+        </div>
+        <div class="service-card ">
+            <img src="images/pes3.jpg" alt="">
+            <h3 class="h3-card">Кварцевый песок</h3>
+            <p> Является продуктом дробления жильного кварца, однако бывает и природного происхождения. Высокая твердость, термостойкость, эстетическая ценность.</p>
+            <div class="price-info"><strong>От: 4650 руб.</strong></div>
+            <a href="#contact">Заказать</a>
+        </div>
+        <div class="service-card ">
+            <img src="images/pes4.jpg" alt="">
+            <h3 class="h3-card">Мытый песок</h3>
+            <p>Производится из карьерного песка. Он проходит дополнительную обработку, в процессе которой из него вымываются глина, пылевидные примеси и гранулы мелкой фракции. </p>
+            <div class="price-info"><strong>От: 1200 руб.</strong></div>
+            <a href="#contact">Заказать</a>
+        </div>
+       
+
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <!-- Вводный текст о компании и продуктах -->
+        <div class="intro-text">
+            <h2>Купить песок</h2>
+            <p>Наша компания предлагает широкий ассортимент песка для строительных нужд. Мы понимаем, что каждый вид песка имеет особенности и используется в различных областях строительных работ. Поэтому мы предлагаем большой выбор песка по низким ценам, чтобы удовлетворить потребности наших клиентов.</p>
+            <p>У нас вы можете заказать:</p>
+            <ul>
+                <li>Карьерный песок</li>
+                <li>Речной песок</li>
+                <li>Кварцевый песок</li>
+                <li>Мытый песок</li>
+            </ul>
+            <p>Мы гарантируем исключительное качество песка и оперативную доставку прямо на ваш объект. Доставка осуществляется быстро и в удобное для вас время. Наша опытная команда обеспечит безопасную погрузку, транспортировку и выгрузку материала. Вы можете быть уверены в том, что ваш заказ будет выполнен профессионально и в установленный срок. Мы ценим ваше время и делаем все возможное, чтобы обеспечить оперативную доставку товара.</p>
+            <p>Песок является одним из ходовых стройматериалов и применяется во многих областях строительства, а также в дорожных работах, благоустройстве окружающих территорий, ландшафтном дизайне и других областях.</p>
+            <h3>Классификация песка и его особенности применения:</h3>
+            <p>Карьерный песок является одним из наиболее популярных видов песка, используемых в строительстве. Он отличается прочностью и надежностью, что делает его превосходным материалом для создания различных смесей и засыпки фундаментов.</p>
+            <p>Речной песок обладает естественной красотой и экологичностью. Он активно используется для создания песчаных пляжей и в ландшафтном дизайне. Он имеет высокую чистоту и соответствует всем экологическим стандартам.</p>
+            <p>Кварцевый песок отличается особой прочностью и долговечностью и применяется в производстве стекла и бетонных смесей.</p>
+            <p>Мытый песок является очищенным от загрязнений и примесей и используется как в строительстве, так и в ландшафтном дизайне.</p>
+        </div>
+
+        <!-- Карточки услуг -->
+        <!-- Карточки услуг уже находятся ниже этого текста, как было показано в предыдущих примерах -->
+    </div>
+
+
+
+    
+</section>
+<section id="contact" data-stellar-background-ratio="0.5">
+    <div class="container">
+         <div class="row">
+<!-- How to change your own map point
+      1. Go to Google Maps
+      2. Click on your location point
+      3. Click "Share" and choose "Embed map" tab
+      4. Copy only URL and paste it within the src="" field below
+-->
+              <!-- <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                   <div id="google-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&scroll=true&source=constructor-api&um=constructor%3A698c42e77d141623a29eb8abf557644413b410e5910ce1e5f5a8822b67a2d62f" allowfullscreen></iframe>
+                   </div>
+              </div>     -->
+              <div class="col-md-6 col-sm-8 ">
+                   <div class="footer-info footer-open-hour">
+                        <div class="section-title">
+                             <h2 class="wow fadeInUp" data-wow-delay="0.2s">Часы работы</h2>
+                        </div>
+                        <div class="wow fadeInUp text-center" data-wow-delay="0.4s">
+                             <p>Воскресенье:выходной</p>
+                             <div>
+                                  <strong>С понедельника по пятницу</strong>
+                                  <p>10:00- 20:00</p>
+                             </div>
+                             <div>
+                                  <strong>Суббота</strong>
+                                  <p>11:00-16:00</p>
+                             </div>
+                        </div>
+                   </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12">
+
+                   <div class="col-md-12 col-sm-12">
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                             <h2>Связаться с нами</h2>
+                        </div>
+                   </div>
+
+                   <!-- CONTACT FORM -->
+                   <form action="#" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+
+                        <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
+                        <h6 class="text-success">Ваше сообщение было успешно отправлено.</h6>
+                        
+                        <!-- IF MAIL NOT SENT -->
+                        <h6 class="text-danger">Адрес электронной почты должен быть действительным, а длина сообщения должна превышать 1 символ.</h6>
+
+                        <div class="col-md-6 col-sm-6">
+                             <input type="text" class="form-control" id="cf-name" name="name" placeholder="Имя">
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                             <input type="email" class="form-control" id="cf-email" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                             <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Фамилия">
+
+                             <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Расскажите о своем проекте"></textarea>
+
+                             <button type="submit" class="form-control" id="cf-submit" name="submit">Отправить сообщение</button>
+                        </div>
+                   </form>
+              </div>
+
+         </div>
+    </div>
+</section>          
+
+
+
+<footer id="footer" data-stellar-background-ratio="0.5">
+    <div class="container">
+         <div class="row">
+
+              <div class="col-md-3 col-sm-8">
+                   <div class="footer-info">
+                        <div class="section-title">
+                             <h2 class="wow fadeInUp" data-wow-delay="0.2s">Наш адрес</h2>
+                        </div>
+                        <address class="wow fadeInUp" data-wow-delay="0.4s">
+                             <p>Москва, Рябиновая улица, 63Ас4</p>
+                        </address>
+                   </div>
+              </div>
+
+              <div class="col-md-3 col-sm-8">
+                   <div class="footer-info">
+                        <div class="section-title">
+                             <h2 class="wow fadeInUp" data-wow-delay="0.2s">Связаться с нами </h2>
+                        </div>
+                        <address class="wow fadeInUp" data-wow-delay="0.4s">
+                             <p>+7 (901) 753-35-47</p>
+                             <p><a href="mailto:info@company.com">Vektorstroi@mail.ru</a></p>
+                             
+                        </address>
+                   </div>
+              </div>
+              <div class="wow fadeInUp col-md-5 col-sm-5 pull-right" data-wow-delay="0.4s">
+                   <div id="google-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&scroll=true&source=constructor-api&um=constructor%3A698c42e77d141623a29eb8abf557644413b410e5910ce1e5f5a8822b67a2d62f" allowfullscreen></iframe>
+                   </div>
+              </div>   
+              
+              
+         </div>
+    </div>
+</footer>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+     <script src="script.js"></script>
+          
+        </body>
